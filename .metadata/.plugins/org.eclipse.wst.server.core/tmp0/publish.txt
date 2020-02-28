@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Mon Feb 17 17:00:36 IST 2020
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Admin\\Downloads\\spring-framework-4.1.6.RELEASE\\libs\\spring-web-4.1.6.RELEASE-sources.jar=WEB-INF/lib/spring-web-4.1.6.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Admin\\Downloads\\spring-framework-4.1.6.RELEASE\\libs\\spring-web-4.1.6.RELEASE.jar=WEB-INF/lib/spring-web-4.1.6.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Admin\\Downloads\\libraries\\spring-web-4.1.6.RELEASE-sources.jar=WEB-INF/lib/spring-web-4.1.6.RELEASE-sources.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Admin\\Downloads\\libraries\\spring-web-4.1.6.RELEASE.jar=WEB-INF/lib/spring-web-4.1.6.RELEASE.jar

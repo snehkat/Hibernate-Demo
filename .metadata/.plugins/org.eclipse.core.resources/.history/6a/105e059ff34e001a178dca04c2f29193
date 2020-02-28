@@ -1,0 +1,23 @@
+package com.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.repositories.PersonRepository;
+
+@Service
+public class PersonService {
+	
+	@Autowired
+	PersonRepository prepo;
+	
+	public List<Person> getPeople(){
+		
+		return prepo.getPeople();
+		
+		
+	}
+
+}

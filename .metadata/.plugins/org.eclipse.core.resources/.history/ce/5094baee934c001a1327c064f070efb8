@@ -1,0 +1,16 @@
+package com.ioc.system2;
+
+import org.springframework.beans.factory.annotation.Configurable;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+
+@Configurable
+@ComponentScan(basePackages = "com.ioc.system2")
+public class JavaConfig {
+
+	@Bean(name="erp")
+	public Project getPro()
+	{
+		return new MobileUI();
+	}
+}

@@ -1,0 +1,19 @@
+package com.boot.services;
+
+import java.util.HashMap;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class DataService {
+
+	public String[] names() {
+		String names= {"Tanaya","Ram","Shyam","Geeta","Seeta","Ramesh"};
+		String names2= {"Jay","Jeet","Arjun","Swasti","Madhu","Viraj"};
+		Map<String,String[]> map=new HashMap<String, String[]>();
+		map.put("team1",names);
+		map.put("team2",names2);
+		return map;
+		
+	}
+}

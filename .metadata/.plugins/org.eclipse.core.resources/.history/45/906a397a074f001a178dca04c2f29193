@@ -1,0 +1,40 @@
+package com.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.model.Person;
+import com.repositories.PersonRepository;
+
+@Service
+public class PersonService {
+	
+	@Autowired
+	PersonRepository prepo;
+	
+	public List<Person> getPeople(){
+		
+		return prepo.getPeople();
+		
+		
+	}
+	
+	public void addPerson(Person p) {
+		Person person=prepo.getpPerson((p.getSno());
+		if(person!=null)
+			prepo.addPerson(person);
+		else
+		 throw new IdException();
+	}
+	
+	class IdException extends Exception{
+		public String toString() {
+			return "IDException";
+			
+		}
+		
+	}
+
+}

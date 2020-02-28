@@ -1,0 +1,23 @@
+td,th{
+	width:150px;
+	height: 30px;
+	padding: 5px
+	
+}
+
+td{
+	background-color: lightblue;
+	color:darkblue
+	
+}
+
+th{"WebContent/resources/style.css"
+	background-color: darkblue;
+	color: lightblue
+	
+}
+
+body{
+	color:darkblue;
+	
+}

@@ -1,0 +1,8 @@
+package com.ioc.system;
+
+public interface BusinessOperation {
+	
+
+	
+
+}

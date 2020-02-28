@@ -1,0 +1,29 @@
+package com.orm.run;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+import com.orm.model.Person;
+import com.orm.utils.SessionProvider;
+
+public class HibernateRun {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	SessionFactory sf=SessionProvider.getSessionFactory();
+	Session session=sf.openSession();
+	Transaction t=session.beginTransaction();
+		
+	Person p=new Person(1,"Arjun","Bengaluru");
+	
+	session.save(p);
+	
+	t.commit();
+	
+	System.out.println("A New Reacord Added");
+	
+	}
+
+}

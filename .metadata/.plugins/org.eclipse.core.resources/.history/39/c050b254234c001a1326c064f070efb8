@@ -1,0 +1,12 @@
+package com.ioc.system;
+
+
+public class XYZcompany implements Comapny {
+	
+	@Override
+	public void establish(String name)
+	{
+	System.out.println("Registerd and started"+name+" Company");
+	}
+
+}

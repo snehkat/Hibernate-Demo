@@ -1,0 +1,42 @@
+package com.boot.controller;
+
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.boot.model.City;
+import com.boot.services.DataService;
+
+@RestController
+@RequestMapping("/api")
+public class APIController {
+@Autowired
+DataService dservice;
+	@RequestMapping("/greet")
+	public String hello() {
+		
+		return "Hello!!! Spring Boot!!";
+		
+	}
+
+	@RequestMapping("/teams")
+	public Map<String,String[]> teams(){
+		
+		return dservice.names();
+	}
+	
+	@RequestMapping("/cities")
+	public List<City> getcities(){
+		
+		return dservice.getCity();
+	}
+	@RequestMapping("/cities/{pattern}")
+	public List<City> getcities(@PathVariable("pattern")String pattern){
+		
+		return dservice.getCities(pattern);
+	}
+}

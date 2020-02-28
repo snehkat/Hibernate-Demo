@@ -1,0 +1,26 @@
+package com.ioc.system2;
+
+public class ERPProject implements Project {
+	
+	public ERPProject()
+	{
+		
+		System.out.println("ERP Project instantiated");
+		System.out.println(hashCode());
+	}
+
+	@Override
+	public void details() {
+		// TODO Auto-generated method stub
+     System.out.println("ERP Project started");
+	}
+	
+	@Override
+	public void afterPropertiesSet() throws Exception
+	{
+		
+		System.out.println("After Properties set");
+	}
+	
+
+}

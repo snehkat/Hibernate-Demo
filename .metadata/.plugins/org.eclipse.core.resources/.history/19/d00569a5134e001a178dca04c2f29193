@@ -1,0 +1,45 @@
+package com.orm.model;
+
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Trainer {
+	
+	@Id
+	private Integer tno;
+	
+	Set<Course> courses;
+	
+	@Column
+	private String name;
+	
+	public Trainer() {}
+
+	public Integer getTno() {
+		return tno;
+	}
+
+	public void setTno(Integer tno) {
+		this.tno = tno;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Trainer(Integer tno, String name) {
+		super();
+		this.tno = tno;
+		this.name = name;
+	}
+	
+
+}

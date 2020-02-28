@@ -1,0 +1,13 @@
+package com.ioc.system;
+
+
+public class XYZcompany implements Comapny {
+	private BusinessOperation branch;
+	@Override
+	public void establish(String name)
+	{
+	System.out.println("Registerd and started"+name+" Company");
+	branch.perform("Bengaluru");
+	}
+
+}

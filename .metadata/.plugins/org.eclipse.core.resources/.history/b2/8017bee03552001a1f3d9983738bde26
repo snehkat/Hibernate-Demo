@@ -1,0 +1,6 @@
+$(document).ready(
+		
+		function () {
+			alert("JQUERY IS WORKING")
+		}
+);
